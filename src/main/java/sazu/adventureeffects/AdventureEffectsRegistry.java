@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sazu.adventureeffects.effect.ManaRegen;
 
-public class Adventureeffects implements ModInitializer {
+public class AdventureEffectsRegistry implements ModInitializer {
 	public static final String MOD_ID = "adventureeffects";
 	public static final StatusEffect MANA_REGEN = new ManaRegen();
 

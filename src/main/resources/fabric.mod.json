@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "sazu.adventureeffects.AdventureEffects"
+          "sazu.adventureeffects.AdventureEffectsRegistry"
 		],
 		"client": [
 			"sazu.adventureeffects.AdventureeffectsClient"
