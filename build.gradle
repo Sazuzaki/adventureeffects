@@ -49,6 +49,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation "maven.modrinth:mana-attributes:${project.mana_attributes}"
+
+	modImplementation "maven.modrinth:stamina-attributes:${project.stamina_attributes}"
 	
 }
 
