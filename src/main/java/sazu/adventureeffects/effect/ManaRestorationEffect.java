@@ -14,7 +14,7 @@ public class ManaRestorationEffect extends InstantStatusEffect {
     @Override
     public void applyInstantEffect(Entity source, Entity attacker, LivingEntity target, int amplifier, double unused) {
         if (!target.getWorld().isClient && target instanceof ManaUsingEntity manaUser) {
-            float restoreAmount = 5.0F * (amplifier + 1); // Flat mana restore
+            float restoreAmount = 10.0F * (amplifier + 2); // Flat mana restore
             float currentMana = manaUser.manaattributes$getMana();
             manaUser.manaattributes$setMana(currentMana + restoreAmount);
         }
