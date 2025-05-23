@@ -12,6 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import sazu.adventureeffects.effect.ComboEffect;
 import sazu.adventureeffects.effect.ManaRegen;
 import sazu.adventureeffects.effect.ManaRestorationEffect;
 import sazu.adventureeffects.event.SleepManaRegenHandler;
@@ -22,6 +23,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 	public static final String MOD_ID = "adventureeffects";
 	public static final StatusEffect MANA_REGEN = new ManaRegen();
 	public static final StatusEffect MANA_RESTORATION = new ManaRestorationEffect();
+	public static final StatusEffect COMBO = new ComboEffect();
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -32,6 +34,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 	public void onInitialize() {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_regen"), MANA_REGEN);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_restoration"), MANA_RESTORATION);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "combo"), COMBO);
 		AdventurePotions.registerPotions();
 		SleepManaRegenHandler.register();
 
