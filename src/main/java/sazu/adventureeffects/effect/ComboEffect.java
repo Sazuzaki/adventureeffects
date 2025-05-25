@@ -13,7 +13,7 @@ public class ComboEffect extends StatusEffect {
     private static final UUID ATTACK_DAMAGE_MODIFIER_UUID = UUID.fromString("ad169d33-4009-4d81-b422-afd81155cd9b");
 
     public ComboEffect() {
-        super(StatusEffectCategory.BENEFICIAL, 0xe9b8b3);
+        super(StatusEffectCategory.BENEFICIAL, 0xc7230a);
     }
 
     @Override

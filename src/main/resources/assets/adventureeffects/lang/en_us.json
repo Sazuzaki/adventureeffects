@@ -7,5 +7,6 @@
   "item.minecraft.lingering_potion.effect.strong_mana_potion": "Lingering Potion of Mana",
   "item.minecraft.tipped_arrow.effect.mana_potion": "Arrow of Mana",
   "item.minecraft.tipped_arrow.effect.strong_mana_potion": "Arrow of Mana",
-  "effect.adventureeffects.mana_restoration": "Instant Mana"
+  "effect.adventureeffects.mana_restoration": "Instant Mana",
+  "effect.adventureeffects.combo": "Combo"
 }
