@@ -12,10 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sazu.adventureeffects.effect.ComboEffect;
-import sazu.adventureeffects.effect.ManaRegen;
-import sazu.adventureeffects.effect.ManaRestorationEffect;
-import sazu.adventureeffects.effect.MightEffect;
+import sazu.adventureeffects.effect.*;
 import sazu.adventureeffects.event.SleepManaRegenHandler;
 import sazu.adventureeffects.potion.AdventurePotions;
 import sazu.adventureeffects.util.PotionsUtil;
@@ -24,6 +21,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 	public static final String MOD_ID = "adventureeffects";
 	public static final StatusEffect MANA_REGEN = new ManaRegen();
 	public static final StatusEffect MANA_RESTORATION = new ManaRestorationEffect();
+	public static final StatusEffect MANA_BOOST = new MaxManaEffect();
 	public static final StatusEffect MIGHT = new MightEffect();
 	public static final StatusEffect COMBO = new ComboEffect();
 
@@ -36,6 +34,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 	public void onInitialize() {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_regen"), MANA_REGEN);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_restoration"), MANA_RESTORATION);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_boost"), MANA_BOOST);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "might"), MIGHT);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "combo"), COMBO);
 		AdventurePotions.registerPotions();
