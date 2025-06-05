@@ -9,5 +9,6 @@
   "item.minecraft.tipped_arrow.effect.strong_mana_potion": "Arrow of Mana",
   "effect.adventureeffects.mana_restoration": "Instant Mana",
   "effect.adventureeffects.combo": "Combo",
-  "effect.adventureeffects.mana_regen": "Mana Regeneration"
+  "effect.adventureeffects.mana_regen": "Mana Regeneration",
+  "effect.adventureeffects.might": "Might"
 }
