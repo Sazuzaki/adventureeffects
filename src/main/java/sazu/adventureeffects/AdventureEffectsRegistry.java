@@ -23,6 +23,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 	public static final StatusEffect MANA_RESTORATION = new ManaRestorationEffect();
 	public static final StatusEffect MANA_BOOST = new MaxManaEffect();
 	public static final StatusEffect MIGHT = new MightEffect();
+	public static final StatusEffect DEFENSE_BOOST = new DefenseBoostEffect();
 	public static final StatusEffect COMBO = new ComboEffect();
 
 	// This logger is used to write text to the console and the log file.
@@ -36,6 +37,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_restoration"), MANA_RESTORATION);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "mana_boost"), MANA_BOOST);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "might"), MIGHT);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "defense_boost"), DEFENSE_BOOST);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "combo"), COMBO);
 		AdventurePotions.registerPotions();
 		SleepManaRegenHandler.register();
