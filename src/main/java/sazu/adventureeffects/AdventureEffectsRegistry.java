@@ -25,6 +25,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 	public static final StatusEffect MIGHT = new MightEffect();
 	public static final StatusEffect DEFENSE_BOOST = new DefenseBoostEffect();
 	public static final StatusEffect COMBO = new ComboEffect();
+	public static final StatusEffect WELL_FED = new WellFedEffect();
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -39,6 +40,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "might"), MIGHT);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "defense_boost"), DEFENSE_BOOST);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "combo"), COMBO);
+		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "well_fed"), WELL_FED);
 		AdventurePotions.registerPotions();
 		SleepManaRegenHandler.register();
 
