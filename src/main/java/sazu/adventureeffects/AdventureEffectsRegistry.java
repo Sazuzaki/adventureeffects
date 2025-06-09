@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sazu.adventureeffects.effect.*;
 import sazu.adventureeffects.event.SleepManaRegenHandler;
+import sazu.adventureeffects.items.AdventureItems;
 import sazu.adventureeffects.potion.AdventurePotions;
 import sazu.adventureeffects.util.PotionsUtil;
 
@@ -43,6 +44,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "well_fed"), WELL_FED);
 		AdventurePotions.registerPotions();
 		SleepManaRegenHandler.register();
+		AdventureItems.init();
 
 		FabricBrewingRecipeRegistry.registerPotionRecipe(
 				Potions.AWKWARD,

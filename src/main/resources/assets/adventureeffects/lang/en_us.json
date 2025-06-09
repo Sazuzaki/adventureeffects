@@ -13,5 +13,9 @@
   "effect.adventureeffects.might": "Might",
   "effect.adventureeffects.mana_boost": "Mana Boost",
   "effect.adventureeffects.defense_boost": "Defense Boost",
-  "effect.adventureeffects.well_fed": "Well Fed"
+  "effect.adventureeffects.well_fed": "Well Fed",
+  "item.adventureeffects.atma_sword": "Atma of the Sword",
+  "item.adventureeffects.atma_shield": "Atma of the Shield",
+  "item.adventureeffects.atma_bow": "Atma of the Bow",
+  "item.adventureeffects.atma_staff": "Atma of the Staff"
 }
