@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sazu.adventureeffects.effect.*;
+import sazu.adventureeffects.event.SleepHealHandler;
 import sazu.adventureeffects.event.SleepManaRegenHandler;
 import sazu.adventureeffects.items.AdventureItems;
 import sazu.adventureeffects.potion.AdventurePotions;
@@ -44,6 +45,7 @@ public class AdventureEffectsRegistry implements ModInitializer {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, "well_fed"), WELL_FED);
 		AdventurePotions.registerPotions();
 		SleepManaRegenHandler.register();
+		SleepHealHandler.register();
 		AdventureItems.init();
 
 		FabricBrewingRecipeRegistry.registerPotionRecipe(
