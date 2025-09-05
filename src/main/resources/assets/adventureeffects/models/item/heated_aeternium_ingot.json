@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "adventureeffects:item/heated_aeternium_ingot"
+  }
+}

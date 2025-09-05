@@ -1,0 +1,6 @@
+{
+      "parent": "item/handheld",
+      "textures": {
+        "layer0": "adventureeffects:item/golden_sickle_head"
+      }
+}

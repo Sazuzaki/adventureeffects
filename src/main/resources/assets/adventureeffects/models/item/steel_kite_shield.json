@@ -1,0 +1,10 @@
+{
+	"parent": "adventureeffects:item/base/metal_kite_shield_a_template",
+	"textures": {
+		"0": "adventureeffects:item/steel_kite_shield",
+		"particle": "adventureeffects:item/steel_kite_shield"
+	},
+	"overrides": [
+		{"predicate": { "blocking": 1 }, "model": "adventureeffects:item/steel_kite_shield_blocking" }
+	]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "rogues:item/base/double_axe_20",
+  "textures": {
+    "layer0": "adventureeffects:item/aeternium_double_axe_head"
+  }
+}

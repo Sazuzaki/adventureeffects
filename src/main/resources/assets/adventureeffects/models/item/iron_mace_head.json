@@ -1,0 +1,7 @@
+{
+  "parent": "adventureeffects:item/base/mace",
+  "gui_light": "front",
+  "textures": {
+        "1": "adventureeffects:item/iron_mace_head"
+  }
+}

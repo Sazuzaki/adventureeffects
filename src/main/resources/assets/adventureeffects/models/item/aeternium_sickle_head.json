@@ -1,0 +1,6 @@
+{
+      "parent": "item/handheld",
+      "textures": {
+        "layer0": "adventureeffects:item/aeternium_sickle_head"
+      }
+}
