@@ -1,0 +1,7 @@
+{
+	"parent": "adventureeffects:item/base/metal_kite_shield_a_blocking",
+	"textures": {
+		"0": "adventureeffects:item/steel_kite_shield",
+		"particle": "adventureeffects:item/steel_kite_shield"
+	}
+}
